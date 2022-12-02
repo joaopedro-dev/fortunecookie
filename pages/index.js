@@ -41,17 +41,13 @@ export default function Home() {
         </section>
 
           <button className={styles.btn_play}>
-              <Link href="/blog/hello-world" className={styles.btn_play}>
+              <Link href="/questions" className={styles.btn_play}>
                 <Image src="/play.png" width={15} height={15} />
                 <p className={styles.text_play}>PLAY</p>
               </Link>
           </button>
       
       </main>
-
-      <footer className={styles.footer}>
-        <p>Fuck Haters</p>
-      </footer>
     </div>
   )
 }
