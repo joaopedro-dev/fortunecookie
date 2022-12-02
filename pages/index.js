@@ -18,26 +18,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <section className={styles.logo_box}>
-        <motion.div
-            animate="visible"
-            initial="hidden"
-            variants={{
-              hidden: {
-                scale: 0.8,
-                opacity: 0,
-              },
-              visible: {
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: 0.4,
-                },
-              },
-            }}
-          >
           <Image src="/cookie.png" alt="Cookie Logo" width={110} height={110} />
           <h1 className={styles.logo_text}>Fortune<br/>Cookie</h1>
-           </motion.div>
+          <p>"A sorte sorri aos fortes" - Terêncio</p>
         </section>
 
           <button className={styles.btn_play}>

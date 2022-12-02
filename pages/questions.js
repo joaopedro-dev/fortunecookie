@@ -13,7 +13,7 @@ export default function questions() {
         <main className={styles.main}>
         <section className={styles.questions_box}>
 
-            <h2 className={styles.question_text}>Question</h2>
+            <p className={styles.question_text}>Question</p>
             <ul className={styles.awnser_box}>
                 <li className={styles.awnser}>Resposta 1</li>
                 <li className={styles.awnser}>Resposta 2</li>
