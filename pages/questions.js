@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import styles from '../styles/questions.module.css'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 
 export default function questions() {
   return (
@@ -11,22 +10,29 @@ export default function questions() {
         </Link>
 
         <main className={styles.main}>
-        <section className={styles.questions_box}>
+        <form action="/api/quote" className={styles.questions_box} method='get|post'>
 
             <p className={styles.question_text}>Question</p>
             <ul className={styles.awnser_box}>
-                <li className={styles.awnser}>Resposta 1</li>
-                <li className={styles.awnser}>Resposta 2</li>
-                <li className={styles.awnser}>Resposta 3</li>
-                <li className={styles.awnser}>Resposta 4</li>
+                <li className={styles.awnser}>
+                  Resposta 1 <input name={styles.check1} type="checkbox"></input>
+                </li>
+                <li className={styles.awnser}>
+                  Resposta 2 <input name={styles.check2} type="checkbox"></input>
+                </li>
+                <li className={styles.awnser}>
+                  Resposta 3 <input name={styles.check3} type="checkbox"></input>
+                </li>
+                <li className={styles.awnser}>
+                  Resposta 4 <input name={styles.check4} type="checkbox"></input>
+                </li> 
             </ul>
-
-            <button className={styles.awnser_btn}>
-              <Link href="/quotes" className={styles.btn_play}>
+            
+            <button type='submit' className={styles.awnser_btn}>
                 <p className={styles.text_play}>RESPONDER</p>
-              </Link>
             </button>
-        </section>
+        </form>
+        
       </main>
     </div>
   )
