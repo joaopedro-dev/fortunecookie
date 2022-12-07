@@ -1,12 +1,10 @@
 export const questoesCookie =[
     {
     id:1,
-    questao:'oi mlk doido',
-    alternatina:'opção pessoa normal'
+    questao:'Qual super herói da Marvel você mais se identifica?',
+    alternatinaRegular:'Deadpool',
+    alternatinaReservada:'Homem-Aranha',
+    alternatinaEgocentrica:'Tony Stark',
+    alternatinaExemplar:'Capitão América',
     },
-    {
-    id:2,
-    questao:'oi mlk zika',
-    alternatina:'opção pessoa daora'
-    }
   ]
