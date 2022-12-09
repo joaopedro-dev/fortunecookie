@@ -18,7 +18,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <section className={styles.logo_box}>
-          <Image src="/cookie.png" alt="Cookie Logo" width={110} height={110} />
+          <Image src="/cookie.png" alt="Cookie Logo" width={120} height={120} />
           <h1 className={styles.logo_text}>Fortune<br/>Cookie</h1>
           <p>"A sorte sorri aos fortes" - Terêncio</p>
         </section>

@@ -1,5 +1,5 @@
 .container {
-    padding: 1rem;
+    padding-left: 1rem;
 }
 
 .main{
@@ -47,20 +47,59 @@
     width: 100%;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #D9D9D9;
     margin: 0.4em;
     list-style: none;
     height: 3em;
     border-radius: 10px;
+    padding: 2rem;
+}
+  
+.final_btn{
+  border: none;
+  padding: 0;
+  margin: 0;
+  border: 0 ;
+  background-color: white;
+  cursor: pointer;
+}
+.quote_box{
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #D9D9D9;
+  width: 20rem;
+  font-size: 15px;
+  height: auto;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 2rem;
 }
 
-.AppButton{
-    margin-top: 1rem;
-    height: 5em;
-    width: 100%;
-    background-color: #80B9FF;
-    border: 0;
-    border-radius: 10px;
+.links{
+  margin: 1rem;
 }
- 
+
+.check{
+  width: 1rem;
+  height: 2rem;
+}
+
+.question_box{
+  margin-top: 1rem;
+}
+
+.logo_text{
+  margin-right: 1rem;
+  font-family: 'Kalam', cursive;
+  font-size: 20px;
+}
+
+.link_home{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}

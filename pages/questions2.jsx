@@ -1,18 +1,18 @@
+import react from 'react';
 import Image from 'next/image'
 import styles from '../styles/questions.module.css'
 import Link from 'next/link'
 import {useState} from 'react';
 
-export default function questions1(props) {
+export default function questions2(props) {
   
   const [estaRespondido, setarRespondido] = useState(false);
   const pontosAdquiridos = 10
-  const pessoaNormal = 0
 
   const handleChangeRegular = event => {
     if (event.target.checked) {
-      const pontuaçãoQuestao1 = pessoaNormal + pontosAdquiridos
-      console.log('Pessoa Regular', pontuaçãoQuestao1)
+      const pontuaçãoRegular2 = pontosAdquiridos  
+      console.log('Pessoa Regular', pontuaçãoRegular2)
     } else {
       console.log('⛔️ Checkbox foi retirado');
     }
@@ -21,7 +21,7 @@ export default function questions1(props) {
 
   const handleChangeReservada = event => {
     if (event.target.checked) {
-      const pontuaçãoQuestao1 = pessoaNormal + pontosAdquiridos
+      const pontuaçãoQuestao1 =  pontosAdquiridos
       console.log('Pessoa Reservada', pontuaçãoQuestao1) 
     } else {
       console.log('⛔️ Checkbox foi retirado');
@@ -31,7 +31,7 @@ export default function questions1(props) {
 
   const handleChangeEgocenctrica = event => {
     if (event.target.checked) {
-      const pontuaçãoQuestao1 = pessoaNormal + pontosAdquiridos
+      const pontuaçãoQuestao1 = pontosAdquiridos
       console.log('Pessoa Egocentrica', pontuaçãoQuestao1) 
     } else {
       console.log('⛔️ Checkbox foi retirado');
@@ -41,7 +41,7 @@ export default function questions1(props) {
 
   const handleChangeExemplar = event => {
     if (event.target.checked) {
-      const pontuaçãoQuestao1 = pessoaNormal + pontosAdquiridos
+      const pontuaçãoQuestao1 = pontosAdquiridos
       console.log('Pessoa Exemplar', pontuaçãoQuestao1) 
     } else {
       console.log('⛔️ Checkbox foi retirado');
@@ -52,33 +52,34 @@ export default function questions1(props) {
 
   return (
     <div className={styles.container}>
-        <Link href='/'>
-            <Image src="/cookie.png" alt="Cookie Logo" width={70} height={70} />
-        </Link>
-        
         <main className={styles.main}>
         <form className={styles.questions_box}>
 
-            <p className={styles.question_text}>Question 1</p>
+            <p className={styles.question_text}>Quando as coisas estão dificeis você:</p>
             <ul className={styles.awnser_box}>
                 <li className={styles.awnser}>
-                  Resposta 1 <input  type="checkbox" value={estaRespondido} onChange={handleChangeRegular} id="subscribe" name="subscribe"></input>
+                  Continua <input className={styles.check} type="checkbox" value={estaRespondido} onChange={handleChangeRegular} id="subscribe" name="subscribe"></input>
                 </li> 
                 <li className={styles.awnser}>
-                  Resposta 2 <input  type="checkbox" value={estaRespondido} onChange={handleChangeReservada} id="subscribe" name="subscribe"></input>
+                  Recomeça <input className={styles.check} type="checkbox" value={estaRespondido} onChange={handleChangeReservada} id="subscribe" name="subscribe"></input>
                 </li> 
                 <li className={styles.awnser}>
-                  Resposta 3 <input  type="checkbox" value={estaRespondido} onChange={handleChangeEgocenctrica} id="subscribe" name="subscribe"></input>
+                  Surta <input className={styles.check} type="checkbox" value={estaRespondido} onChange={handleChangeEgocenctrica} id="subscribe" name="subscribe"></input>
                 </li> 
                 <li className={styles.awnser}>
-                  Resposta 4 <input  type="checkbox" value={estaRespondido} onChange={handleChangeExemplar} id="subscribe" name="subscribe"></input>
+                  Desiste <input className={styles.check} type="checkbox" value={estaRespondido} onChange={handleChangeExemplar} id="subscribe" name="subscribe"></input>
                 </li> 
             </ul>
         </form>
 
-        <Link href='/questions'>
+        <nav className={styles.question_box}>
+        <Link href='/questions1' className={styles.links}>
             Anterior
         </Link>
+        <Link href='/questions3' className={styles.links}>
+            Próxima
+        </Link>
+        </nav>
         
       </main>
     </div>
