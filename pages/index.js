@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       
       <Head>
-        <title>Fortune Cookie</title>
+        <title>Fortune Cookie | Home</title>
         <meta name="description" content="Você quem faz a sua sorte" />
         <link rel="icon" href="/cookie-favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
