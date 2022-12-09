@@ -1,5 +1,4 @@
-export default function handler(req, res) {
-    res.status(200).json([
+export const questoesCookie = [
       {
         "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
         "author": "Thomas Edison"
@@ -16,4 +15,4 @@ export default function handler(req, res) {
         "text": "Difficulties increase the nearer we get to the goal.",
         "author": "Johann Wolfgang von Goethe"
       }
-    ])}
+]

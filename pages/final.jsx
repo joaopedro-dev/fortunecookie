@@ -8,7 +8,7 @@ export default function Final() {
   const [quotes, setQuotes] = useState('')
 
   const getQuote = () => {
-    fetch ('https://fortunecookie-swart.vercel.app/api/quote')
+     fetch ('https://type.fit/api/quotes')
     .then((res) => res.json())
     .then((data) => {
       let randomNum = Math.floor(Math.random() * data.length)
