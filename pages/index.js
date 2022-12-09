@@ -6,14 +6,14 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className={styles.container}>
+      
       <Head>
         <title>Fortune Cookie</title>
         <meta name="description" content="Você quem faz a sua sorte" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/cookie-favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       </Head>
-
       <main className={styles.main}>
         <section className={styles.logo_box}>
           <Image src="/cookie.png" alt="Cookie Logo" width={120} height={120} />

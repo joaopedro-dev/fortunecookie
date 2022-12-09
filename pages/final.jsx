@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/questions.module.css'
 import Link from 'next/link'
 import { useState } from 'react';
+import Head from 'next/head';
 
 export default function Final() {
   const [quotes, setQuotes] = useState('')
@@ -18,7 +19,12 @@ export default function Final() {
 
   return (
 
-    <div className={styles.container}>        
+    <div className={styles.container}>    
+      <Head>
+        <title>Fortune Cookie | Final </title>
+        <meta name="description" content="Final" />
+        <link rel="icon" href="/cookie-favicon.ico" />
+      </Head>    
         <main className={styles.main}>
           <section>
             <p className={styles.quote_box}>{quotes.text}</p>

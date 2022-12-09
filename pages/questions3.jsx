@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/questions.module.css'
 import Link from 'next/link'
 import {useState} from 'react';
+import Head from 'next/head'
 
 export default function Question3(props) {
   
@@ -52,6 +53,11 @@ export default function Question3(props) {
 
   return (
     <div className={styles.container}>
+        <Head>
+          <title>Fortune Cookie | Questões </title>
+          <meta name="description" content="Questão 1" />
+          <link rel="icon" href="/cookie-favicon.ico" />
+        </Head>
       <main className={styles.main}>
         <form className={styles.questions_box}>
 

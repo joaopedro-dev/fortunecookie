@@ -1,5 +1,6 @@
 import react  from 'react';
 import Image from 'next/image'
+import Head from 'next/head'
 import styles from '../styles/questions.module.css'
 import Link from 'next/link'
 import { useState } from 'react';
@@ -51,6 +52,11 @@ export default function Questions(props) {
   
   return (
     <div className={styles.container}>
+        <Head>
+          <title>Fortune Cookie | Questões </title>
+          <meta name="description" content="Questão 1" />
+          <link rel="icon" href="/cookie-favicon.ico" />
+        </Head>
         <main className={styles.main}>
         <form className={styles.questions_box}>
 
