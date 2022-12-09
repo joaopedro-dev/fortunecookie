@@ -1,11 +1,19 @@
 export default function handler(req, res) {
     res.status(200).json([
       {
-      id:1,
-      questao:'Qual super herói da Marvel você mais se identifica?',
-      alternatinaRegular:'Deadpool',
-      alternatinaReservada:'Homem-Aranha',
-      alternatinaEgocentrica:'Tony Stark',
-      alternatinaExemplar:'Capitão América',
+        "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
+        "author": "Thomas Edison"
+      },
+      {
+        "text": "You can observe a lot just by watching.",
+        "author": "Yogi Berra"
+      },
+      {
+        "text": "A house divided against itself cannot stand.",
+        "author": "Abraham Lincoln"
+      },
+      {
+        "text": "Difficulties increase the nearer we get to the goal.",
+        "author": "Johann Wolfgang von Goethe"
       }
     ])}

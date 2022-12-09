@@ -12,7 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet"/>
       </Head>
 
       <main className={styles.main}>
@@ -24,7 +23,7 @@ export default function Home() {
 
           <button className={styles.btn_play}>
               <Link href="/questions" className={styles.btn_play}>
-                <Image src="/play.png" width={15} height={15} />
+                <Image src="/play.png" width={15} height={15} alt="Play"/>
                 <p className={styles.text_play}>PLAY</p>
               </Link>
           </button>
