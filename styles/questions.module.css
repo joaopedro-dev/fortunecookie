@@ -67,14 +67,12 @@
   cursor: pointer;
 }
 .quote_box{
-  margin: 1rem;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
   height: auto;
   flex-direction: column;
-  padding: 2rem;
 }
 .quote_text{
   font-size: 18px;
