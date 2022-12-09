@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 
 export default function Home() {
   return (
@@ -20,7 +19,7 @@ export default function Home() {
         <section className={styles.logo_box}>
           <Image src="/cookie.png" alt="Cookie Logo" width={120} height={120} />
           <h1 className={styles.logo_text}>Fortune<br/>Cookie</h1>
-          <p>"A sorte sorri aos fortes" - Terêncio</p>
+          <p>&quot;A sorte sorri aos fortes&quot; - Terêncio</p>
         </section>
 
           <button className={styles.btn_play}>

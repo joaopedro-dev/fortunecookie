@@ -4,7 +4,7 @@ import styles from '../styles/questions.module.css'
 import Link from 'next/link'
 import { useState } from 'react';
 
-export default function questions() {
+export default function Final() {
   const [quotes, setQuotes] = useState('')
 
   const getQuote = () => {

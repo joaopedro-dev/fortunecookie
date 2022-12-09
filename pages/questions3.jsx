@@ -4,7 +4,7 @@ import styles from '../styles/questions.module.css'
 import Link from 'next/link'
 import {useState} from 'react';
 
-export default function questions3(props) {
+export default function Question3(props) {
   
   const [estaRespondido, setarRespondido] = useState(false);
   const pontosAdquiridos = 10

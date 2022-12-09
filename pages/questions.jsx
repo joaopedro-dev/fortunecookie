@@ -2,9 +2,9 @@ import react  from 'react';
 import Image from 'next/image'
 import styles from '../styles/questions.module.css'
 import Link from 'next/link'
-import {useState} from 'react';
+import { useState } from 'react';
 
-export default function questions(props) {
+export default function Questions(props) {
   
   const [estaRespondido, setarRespondido] = useState(false);
   const pontosAdquiridos = 10
