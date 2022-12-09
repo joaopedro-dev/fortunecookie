@@ -75,13 +75,13 @@
   flex-direction: column;
 }
 .quote_text{
+  border-top: solid 40px #fdbd46;
+  background-color: #FFD280;
   font-size: 18px;
   width: 20rem;
-  background-color: #FFD280;
   font-family: 'Kalam', cursive;
   height: auto;
   padding: 2rem;  
-  border-radius: 10px;
 }
 
 .quote_autor{
