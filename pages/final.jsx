@@ -26,9 +26,9 @@ export default function Final() {
         <link rel="icon" href="/cookie-favicon.ico" />
       </Head>    
         <main className={styles.main}>
-          <section>
-            <p className={styles.quote_box}>{quotes.text}</p>
-            <p className={styles.quote_box}>{quotes.author}</p>
+          <section className={styles.quote_box}>
+            <p className={styles.quote_text}>&quot;{quotes.text}&quot;</p>
+            <p className={styles.quote_autor}>- {quotes.author}</p>
           </section>
           <button className={styles.final_btn} onClick={getQuote}>
             <Image src="/fortune.gif" alt="Cookie Logo" width={150} height={150} />
